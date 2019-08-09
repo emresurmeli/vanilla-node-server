@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
   }
   else {
     res.writeHead(404, {'Content-Type': 'application/json'})
-    res.write(JSON.stringify({ 404: `Page not found`}))
+    res.write(JSON.stringify({404: `Page not found`}))
     res.end()
   }
 }).listen(3000, () => {
